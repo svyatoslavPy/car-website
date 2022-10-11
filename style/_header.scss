@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.header {
+    position: absolute;
+    z-index: 10000;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    width: 100%;
+
+    &_scrolled {
+        position: fixed;
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        background: hsl(284, 80%, 8%);
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                top: -50px;
+            }
+
+            to {
+                opacity: 1;
+                top: 0;
+            }
+        }
+    }
+
+    .container-fluid {
+        width: 90%;
+
+        .nav-info { 
+            display: flex; 
+            column-gap: 40px; 
+            color: white; 
+            transition: 0.5s; 
+ 
+            .nav-info__text { 
+                color: white; 
+                text-decoration: none; 
+            } 
+            .nav-info__text:hover { 
+                color: hsl(219, 69%, 56%); 
+                transition: 0.5s; 
+            } 
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .navbar-logo {
+            color: white;
+        }
+
+        .navbar-toggler {
+            border: 1px solid white;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url(../img/menu.png);
+            color: white;
+        }
+
+        .collapse {
+            .nav-link {
+                color: white;
+                margin: 0px 0px 0px 30px;
+
+                transition: 800ms;
+
+                &:hover {
+                    color: hsl(219, 69%, 56%);
+                    transition: 800ms;
+                }
+            }
+
+            .nav-linkelement::before {
+                content: '';
+                display: block;
+                width: 7.14px;
+                height: 7.14px;
+                border-radius: 50%;
+                background: hsl(219, 69%, 56%);
+            }
+        }
+
+        .dropdown-menu {
+            width: 130px;
+        }
+    }
+}

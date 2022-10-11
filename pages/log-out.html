@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../style/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header id="header" class="header">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="navbar-logo" href="#">
+					<i class="fa-solid fa-car"></i>
+					NextCar
+				</div>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="../index.html" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Autosearch
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="../index.html">
+										New
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="../index.html">
+										Used Cars
+									</a>
+								</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li>
+									<a class="dropdown-item" href="additional.html">
+										Auto from USA
+									</a>
+								</li>
+							</ul>
+						</li>
+						<a class="nav-link active" aria-current="page" href="aboutus.html">
+							Popular Offers
+						</a>
+						<div class="nav-link__element"></div>
+					</ul>
+				</div>
+				<div class="nav-info">
+					<a class="nav-info__text" href="reg-out.html">
+						Reg out
+					</a>
+					<a class="nav-info__text" href="#">
+						Login
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+						aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<div class="form__wrapper">
+			<div class="picture">
+				<img src="../img/img-01.png" alt="">
+			</div>
+			<form action="#" class="form">
+				<p class="form__title">
+					Member Login
+				</p>
+				<input class="input" type="email" id="email" placeholder="Email" required><label for="email"></label>
+				<input class="password" type="password" placeholder="Confirm password" id="pass" name="password" minlength="8"
+					required>
+				<div class="btn">
+					<p>
+						Login
+					</p>
+				</div>
+			</form>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row footer__inner">
+				<div class="col footer__link">
+					<p>
+						<i class="fa-solid fa-car"></i>
+						NextCar
+					</p>
+					<p class="footer__text">
+						We offer the best cars of
+						the most recognized brands in
+						the world.
+					</p>
+				</div>
+				<div class="col footer__link">
+					<p>
+						Company
+					</p>
+					<p class="footer__text">
+						Autosearch
+					</p>
+					<p class="footer__text">
+						Popular Offers
+					</p>
+					<p class="footer__text">
+						Home
+					</p>
+				</div>
+				<div class="col footer__link">
+					<p>
+						Information
+					</p>
+					<p class="footer__text">
+						Request a quote
+					</p>
+					<p class="footer__text">
+						Find a dealer
+					</p>
+					<p class="footer__text">
+						Contact us
+					</p>
+					<p class="footer__text">
+						Services
+					</p>
+				</div>
+				<div class="col footer__link">
+					<p>
+						Follow us
+					</p>
+					<div class="footer__icon">
+						<p>
+							<i class="fa-brands fa-facebook-f"></i>
+						</p>
+						<p>
+							<i class="fa-brands fa-instagram"></i>
+						</p>
+						<p>
+							<i class="fa-brands fa-twitter"></i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script>
+		// Сразу создаём переменные
+		let header = document.getElementById("header").classList;
+		let active_class = "header_scrolled";
+
+		/**
+		 * Слушаем событие прокрутки
+		 */
+		window.addEventListener("scroll", (e) => {
+			if (pageYOffset > 50) header.add(active_class);
+			else header.remove(active_class);
+		});
+	</script>
+	<!-- MDB -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<!-- Вариант 2: отдельные JS для Popper и Bootstrap -->
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="buy auto: from usa, used and new">
+  <meta name="keywords" content="autosearch, auto from usa, naxtcar">
+  <meta name="author" content="Svytoslav, Tymur, Anna, Mariy">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="../dist/simple-lightbox.css?v2.8.0" />
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-logo" href="#">
+          <i class="fa-solid fa-car"></i>
+          NextCar
+        </div>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../index.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Autosearch
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../index.html">
+                    New
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../index.html">
+                    Used Cars
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Auto from USA
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <a class="nav-link active" aria-current="page" href="aboutus.html">
+              Popular Offers
+            </a>
+            <div class="nav-link__element"></div>
+          </ul>
+        </div>
+        <div class="nav-info">
+          <a class="nav-info__text" href="../pages/reg-out.html">
+            Reg out
+          </a>
+          <a class="nav-info__text" href="../pages/log-out.html">
+            Login
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="row background--special"></div>
+    <div class="row">
+      <div class="col-md search search--special">
+        <div class="content">
+          <div class="tab tab--special">
+            <form method="post" action="https://fom.in.ua/echo">
+              <select class="tab__item" name="Select1">
+                <option value="none">Brand</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Kia">Kia</option>
+                <option value="Audi" id="audi">Audi!</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Opel">Opel</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Peogeot">Peogeot</option>
+                <option value="Renault">Renault</option>
+                <option value="Bmw" id="bmw">Bmw!</option>
+                <option value="Skoda">Skoda</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+              </select>
+              <label class="tab__item tab__item--extra">
+                <h2 class="tab__title">
+                  Год
+                </h2>
+                <select id="yearFrom" name="selectorFrom" data-placeholder="от" class="tab__item tab__item--special">
+                  <option value="0">от</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                </select>
+                <select id="yearTo" name="selectTo" data-placeholder="от" class="tab__item tab__item--special">
+                  <option value="0">до</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                </select>
+              </label>
+              <select class="tab__item" name="Select4" id="selector">
+                <option value="none">Body</option>
+                <option value="HATCHBACK">HATCHBACK</option>
+                <option value="PASSENGER">PASSENGER</option>
+                <option value="SEDAN">SEDAN</option>
+                <option value="SUV">SUV</option>
+              </select>
+              <input type="number" placeholder="Price" class="tab__item">
+              <select class="tab__item" name="Select5">
+                <option value="none">State</option>
+                <option value="dtp">After the accident</option>
+                <option value="by">Used</option>
+              </select>
+              <select class="tab__item" name="Select6">
+                <option value="none">Mileage</option>
+                <option value="dtp">0км - 10 000км</option>
+                <option value="by">10 000км - 50 000км</option>
+                <option value="by">50 000км - 100 000км</option>
+              </select>
+              <input class="tab__button" type="submit" name="submit1" value="Search">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md slider-lightbox">
+        <div class="gallery">
+          <a href="../lightbox/full/first.jpg"><img src="../lightbox/thumb/first.jpg" alt="porsche"
+              title="Beautiful Image" class="thumb-picture" /></a>
+          <a href="../lightbox/full/second.jpg"><img src="../lightbox/thumb/second.jpg" alt="porsche"
+              title="Beautiful Image" class="thumb-picture" /></a>
+          <a href="../lightbox/full/third.jpg"><img src="../lightbox/thumb/third.jpg" alt="porsche"
+              title="Beautiful Image" class="thumb-picture" /></a>
+          <a href="../lightbox/full/fourth.jpg"><img src="../lightbox/thumb/fourth.jpg" alt="porsche"
+              title="Beautiful Image" class="thumb-picture" /></a>
+          <a href="../lightbox/full/five.jpg"><img src="../lightbox/thumb/five.jpg" alt="porsche"
+              title="Beautiful Image" class="thumb-picture" /></a>
+          <a href="../lightbox/full/six.jpg"><img src="../lightbox/thumb/six.jpg" alt="porsche" title="Beautiful Image"
+              class="thumb-picture" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md coment">
+        <div class="coment__container">
+          <h3 class="coment__title">
+            <i class="fa-solid fa-user"></i>
+            Taylor Johnson
+          </h3>
+          <div class="coment__copy">
+            <p class="coment__text">
+              We were very satisfied with the work of the company at all levels of cooperation
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md coment coment--special">
+        <div class="coment__container">
+          <h3 class="coment__title">
+            <i class="fa-solid fa-user"></i>
+            Cameron Williams
+          </h3>
+          <div class="coment__copy">
+            <p class="coment__text">
+              We ordered a car from the USA. Delivery of the car was completed within the agreed time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md coment coment--additional">
+        <div class="coment__container">
+          <h3 class="coment__title">
+            <i class="fa-solid fa-user"></i>
+            Lucas Brown
+          </h3>
+          <div class="coment__copy">
+            <p class="coment__text">
+              I am very glad that I found you on the Internet. Now I have a fancy car. Completed the order quickly and
+              efficiently.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="country">
+      </div>
+      <div class="country country--special"></div>
+      <div class="country country--additional"></div>
+      <div class="country country--secondary"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row footer__inner">
+        <div class="col footer__link">
+          <p>
+            <i class="fa-solid fa-car"></i>
+            NextCar
+          </p>
+          <p class="footer__text">
+            We offer the best cars of
+            the most recognized brands in
+            the world.
+          </p>
+        </div>
+        <div class="col footer__link">
+          <p>
+            Company
+          </p>
+          <p class="footer__text">
+            Autosearch
+          </p>
+          <p class="footer__text">
+            Popular Offers
+          </p>
+          <p class="footer__text">
+            Home
+          </p>
+        </div>
+        <div class="col footer__link">
+          <p>
+            Information
+          </p>
+          <p class="footer__text">
+            Request a quote
+          </p>
+          <p class="footer__text">
+            Find a dealer
+          </p>
+          <p class="footer__text">
+            Contact us
+          </p>
+          <p class="footer__text">
+            Services
+          </p>
+        </div>
+        <div class="col footer__link">
+          <p>
+            Follow us
+          </p>
+          <div class="footer__icon">
+            <p>
+              <i class="fa-brands fa-facebook-f"></i>
+            </p>
+            <p>
+              <i class="fa-brands fa-instagram"></i>
+            </p>
+            <p>
+              <i class="fa-brands fa-twitter"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="../dist/simple-lightbox.js?v2.8.0"></script>
+  <script>
+    (function () {
+      var $gallery = new SimpleLightbox('.gallery a', {});
+    })();
+
+    let header = document.getElementById("header").classList;
+    let active_class = "header_scrolled";
+    window.addEventListener("scroll", (e) => {
+      if (pageYOffset > 50) header.add(active_class);
+      else header.remove(active_class);
+    });
+  </script>
+</body>
+
+</html>
